@@ -41,6 +41,11 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <script>
+    function resizeIframe(obj) {
+      obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+    }
+  </script>
 
   <!-- =======================================================
   * Template Name: iPortfolio - v1.5.0
@@ -74,15 +79,12 @@
           <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
           <li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
           <li><a href="#portfolio"><i class="bx bx-book-content"></i> Portfolio</a></li>
-          <!-- <li><a href="#contact"><i class="bx bx-envelope"></i> Contact</a></li> -->
 
         </ul>
-      </nav><!-- .nav-menu -->
       <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
     </div>
   </header><!-- End Header -->
-  <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
       <h1>Nick Menon</h1>
@@ -92,7 +94,6 @@
 
   <main id="main">
 
-    <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container">
 
@@ -116,7 +117,7 @@
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
             <h3>Full Stack Software Engineer</h3>
             <p class="font-italic">
-            Javascript | Python | React | Node.js | Redux | PostgreSQL | Sequelize ORM | Flask | SQLAlchemy | HTML | CSS
+
             </p>
             <div class="row">
               <div class="col-lg-6">
@@ -214,84 +215,11 @@
 
         <div class="section-title">
           <h2>Resume</h2>
-          <p>A Full PDF Copy Of Resume Can Be Obtained Here:</p>
+         <a href="/assets/Resume.pdf" download>Download</a>
+
         </div>
 
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-up">
-            <h3 class="resume-title">Sumary</h3>
-            <div class="resume-item pb-0">
-              <h4>Nick Menon</h4>
-              <p><em>Innovative and deadline-driven Mechancial Engineer turned Software Engineer</em></p>
-              <ul>
-                <li>10383 South Blaney Ave, Cupertino, CA 95014</li>
-                <li>(408) 429-0938</li>
-                <li>nikhilmenon@comcast.net</li>
-              </ul>
-            </div>
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Bachelors of Engineering: Petroleum Engineering</h4>
-              <h5>2011 - 2016</h5>
-              <p><em>Texas Tech University, Lubbock, TX</em></p>
-              <p>Texas Tech Competitive Engineering Scholarship | Engineering Diplomats | Lambda Chi Alpha Fraternity </p>
-            </div>
-            <div class="resume-item">
-              <h4>Full-Stack Software Engineering Bootcamp</h4>
-              <h5>2020 - 2021</h5>
-              <p><em>AppAcademy, San Francisco, CA</em></p>
-            </div>
-            <h3 class="resume-title">Software Skills</h3>
-            <div class="resume-item pb-0">
-              <p><em> JavaScript | Python | React | Redux | HTML5 | CSS3 | Flask | SQLAlchemy | Node.js | Express | Docker
-              Sequelize | SQL | PostgreSQL | Heroku</em></p>
-            </div>
-          </div>
-          
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Senior Mechanical Design Engineer</h4>
-              <h5>Sept 2019 - April 2020</h5>
-              <p><em>Klear Bit Technologies, Bridgeport , TX </em></p>
-              <ul>
-                <li>Programmed VBA Macros to streamline and automize the design process for SolidWorks.</li>
-                <li>Coordinate with the Sales Engineering team to transition ideas into specifications and CAD (3D, 2D, and assembly
-                documentation) </li>
-                <li>Contributed to several patent applications by helping design cost-efficient upgrades to products.</li>
-                <li>Created the work-from-home program so employees would have flexible workspaces.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Mechanical Design Engineer</h4>
-              <h5>Feb 2018 - Sept 2019</h5>
-              <p><em>Ulterra Drilling Technologies, Fort Worth, TX</em></p>
-              <ul>
-                <li>Coordinate with Engineering team members to discuss new Drilling Technologies, to improve the efficiency of products for customers.</li>
-                <li>Ensure products created and work environment are in conformance with API (American Petroleum Institute) Standards and
-                Audits.</li>
-                <li>Provide Presentations on Intellectual Property, Work with Legal and Innovation team in evaluating US Patents, and other
-                Intellectual Property Information.</li>
-                <li>Implement Computational Fluid Dynamics to Generate Simulations to understand and improve Product Performance </li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Patent Examiner (Mechanical Engineer)</h4>
-              <h5>Jan 2017 - Feb 2018</h5>
-              <p><em>USPTO, Dallas, TX</em></p>
-              <ul>
-                <li>Reviewing patent applications to determine if they comply with basic format, rules and legal requirements</li>
-                <li>Searching for relevant technologies to compare similar prior inventions with the invention claimed in the patent
-                application by writing queries on the patent database</li>
-                <li>Communicating findings as to the patentability of an applicant's invention via a written action to inventors/patent
-                practitioners.</li>
-                <li>Determining the scope of the invention claimed by the inventor</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
+     
       </div>
     </section><!-- End Resume Section -->
 
