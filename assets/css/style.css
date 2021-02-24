@@ -1103,9 +1103,58 @@ section {
   }
 }
 
+/* Container */
 
+	.container {
+		margin: 0 auto;
+		max-width: calc(100% - 4em);
+		width: 70em;
+	}
 
-.row {
+		.container.xsmall {
+			width: 17.5em;
+		}
+
+		.container.small {
+			width: 35em;
+		}
+
+		.container.medium {
+			width: 52.5em;
+		}
+
+		.container.large {
+			width: 87.5em;
+		}
+
+		.container.xlarge {
+			width: 105em;
+		}
+
+		.container.max {
+			width: 100%;
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			.container {
+				width: 90%;
+				max-width: 100%;
+			}
+
+		}
+
+		@media screen and (max-width: 980px) {
+
+			.container {
+				width: 100% !important;
+			}
+
+		}
+
+/* Row */
+
+	.row {
 		display: flex;
 		flex-wrap: wrap;
 		box-sizing: border-box;
